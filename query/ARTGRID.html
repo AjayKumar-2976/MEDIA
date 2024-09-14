@@ -1,0 +1,230 @@
+<html>
+
+<head>
+    <title>ART</title>
+    <meta name="content" content="about flex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+
+
+        a {
+
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+            font-size: 24px !important;
+
+
+        }
+
+        .art1, .art2, .art3, .art4, .atr5{
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .container {
+            display: grid;
+
+
+            grid-template-areas:
+                "art1 art2"
+                "art3 art4"
+                "art5 art4";
+        }
+
+
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .art1 {
+            grid-area: art1;
+        }
+
+        .art2 {
+            grid-area: art2;
+        }
+
+        .art3 {
+            grid-area: art3;
+        }
+
+
+
+        .art4 {
+            grid-area: art4;
+        }
+
+
+
+        .art5 {
+            grid-area: art5;
+        }
+
+        .art4 {
+            grid-area: art4;
+        }
+
+
+
+        .p2 {
+            height: 50px;
+            text-align: center;
+            font-size: x-large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .img1 {
+            height: 424px;
+            width: 300px;
+
+
+        }
+
+
+        .p3 {
+            width: 60%;
+            height: 113px;
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .p4 {
+            width:60%;
+            height: 113px;
+            color: crimson;
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #name {
+            width: 50%;
+            height: 41px;
+            border-color:aliceblue;
+        }
+
+        #email {
+            width: 50%;
+            height: 41px;
+            border-color:aliceblue;
+
+        }
+
+        #message {
+            width: 50%;
+            height: 41px;
+            border-color:aliceblue;
+
+        }
+
+        .bu {
+            width: 50%;
+            height: 41px;
+            background-color: #616161;
+        }
+
+
+        @media screen and (min-width:480px)
+        {
+            body{
+                background-color:bisque;
+
+            }
+        }
+
+        
+        @media screen and (min-width:768px)
+        {
+            body{
+                background-color:rgb(35, 154, 205);
+
+            }
+        }
+
+        
+        @media screen and (min-width:992px)
+        {
+            body{
+                background-color:azure;
+
+            }
+        }
+
+        
+        @media screen and (min-width:1200px)
+        {
+            body{
+                background-color:aliceblue;
+
+            }
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="">MY ART</a> <a href="">About</a>
+    </nav>
+
+    <div class="container">
+        <img src="./art1.jpg" class="art1">
+        <img src="./art2.jpg" class="art2">
+        <img src="./art3.jpg" class="art3">
+        <img src="./art4.jpg" class="art4">
+        <img src="./art5.jpg" class="art5">
+
+    </div>
+    <br>
+    <p class="p2">About</p>
+    <center><img src="./boy.jpg" class="img1"></center>
+    <center>
+        <p class="p3">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an
+            interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt
+            sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla. .</p>
+    </center>
+    <br><br><br>
+    <center>
+        <p class="p4">Do not hesitate to contact me!</p>
+    </center>
+
+    <center>
+        <b> Name</b>
+        <br> <input type="name" id="name">
+        <br><br>
+        <b>Email</b>
+        <br> <input type="email" id="email">
+        <br><br>
+
+        <b>Message</b>
+        <br> <input type="message" id="message">
+        <br><br>
+
+        <br>
+        <button class="bu">Send</button><br><br>
+        Powered by &nbsp;<a href="www.w3schools.com/w3css/default." class="anc"><small>w3.css</small></a>
+
+    </center>
+
+
+
+</body>
+
+</html>
